@@ -24,11 +24,11 @@
                 </div>
               </div>
               <!-- list -->
-              <ul class="text-center">
-                <li style="cursor: pointer; background-color: chartreuse" class="m-2 animate__animated animate__backInDown text-dark p-2 badge ms-2 fs-6" v-for="(name,index) in names" :key="name" @click="removeItemList(index)">
+              <div class="text-center">
+                <div style="cursor: pointer; background-color: chartreuse" class="m-2 animate__animated animate__backInDown text-dark p-2 badge ms-2 fs-6" v-for="(name,index) in names" :key="name" @click="removeItemList(index)">
                   {{ name }}
-                </li>
-              </ul>
+                </div>
+              </div>
               <!-- list end -->
               <!-- error true -->
               <div class="animate__animated animate__shakeX text-danger text-center fs-5 fw-bold" v-if="showError">{{ error }}</div>
